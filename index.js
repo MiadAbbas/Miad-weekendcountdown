@@ -27,7 +27,7 @@ if (day === 'Friday' )
 {
     formInput.innerText = `Hallo ${event.target.value} 😍️. Today is ${day} . only ${daysToWeekend} day left until Weekend !` ;  
 }
-else if (day === 'Saturday'  || today === "Sunday"){
+else if (day === 'Saturday'  || day === "Sunday"){
     formInput.innerText = `Hallo ${event.target.value} 😍️. Today is ${day} . enjoy your free time 💃️🎉️!`   
 }
 
