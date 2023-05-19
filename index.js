@@ -21,9 +21,19 @@ const formInput = document.querySelector('#hiddenMessage');
 const hiddenMessage = document.querySelector('#formularInputFeld');
 
 
-hiddenMessage.onchange = (event) =>
+hiddenMessage.onchange = (event) =>{
+
+if (day === 'Friday' )
 {
-formInput.innerText = `Hallo ${event.target.value} 😍️. Today is ${day} . only ${daysToWeekend} days left until Weekend !` ;
+    formInput.innerText = `Hallo ${event.target.value} 😍️. Today is ${day} . only ${daysToWeekend} day left until Weekend !` ;  
+}
+else if (day === 'Saturday'  || today === "Sunday"){
+    formInput.innerText = `Hallo ${event.target.value} 😍️. Today is ${day} . enjoy your free time 💃️🎉️!`   
+}
+
+else
+{formInput.innerText = `Hallo ${event.target.value} 😍️. Today is ${day} . only ${daysToWeekend} days left until Weekend !` ;
+}
 }
 
 const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
@@ -32,9 +42,10 @@ let day = weekday[d.getDay()];
 
 
 const currentDayOfWeek = d.getDay();
-const daysUntilFriday = 5 - currentDayOfWeek;
+const daysUntilFriday = 6 - currentDayOfWeek;
 
 const daysUntilSunday = 7 - currentDayOfWeek;
 
 
 const daysToWeekend = Math.min(daysUntilFriday, daysUntilSunday);
+
