@@ -21,7 +21,7 @@ const formInput = document.querySelector('#hiddenMessage');
 const hiddenMessage = document.querySelector('#formularInputFeld');
 
 
-hiddenMessage.onchange = (event) =>{
+hiddenMessage.onchange = (event) => {
 
 if (day === 'Friday' )
 {
@@ -30,7 +30,7 @@ if (day === 'Friday' )
 
 else if (day === 'Saturday'  || day === "Sunday")
 {
-    formInput.innerText = `Hallo ${event.target.value} 😍️. Today is ${day} . enjoy your free time 💃️🎉️!`   
+    formInput.innerText = `Hallo ${event.target.value} 😍️. Today is ${day} . enjoy your free time! 💃️🎉️`   
 }
 
 else
