@@ -6,7 +6,7 @@ const headerStyle = document.querySelector('h1');
 headerStyle.style.paddingTop = '60px'
 headerStyle.style.fontSize = '3rem'
 
-const bodyStyle = document.querySelector ('.container');
+const bodyStyle = document.querySelector ('.containere');
 bodyStyle.style.padding = '70px 70px 400px';
 // bodyStyle.style.textAlign = 'center';
 bodyStyle.style.boxShadow = ' rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset';
